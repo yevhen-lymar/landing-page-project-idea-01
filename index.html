@@ -23,7 +23,9 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <div class="container">
-        <div class="header__logo">LandingLogo</div>
+        <div class="header__logo">
+          <a href="#hero" class="header__logo-link">LandingLogo</a>
+        </div>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -63,6 +65,35 @@
           <p class="about__description">
             We are a team of professionals to delivering high-quality solutions.
           </p>
+          <div class="about__content">
+            <div class="about__item">
+              <img
+                src="./images/about-image-work.jpg"
+                alt="Working"
+                class="about__item-img"
+              />
+              <div class="about__item-info">
+                <i class="fa fa-check about__icon"></i>
+                <p class="about__text">
+                  We have been in business<br />
+                  for over 10 years.
+                </p>
+              </div>
+            </div>
+            <div class="about__item">
+              <img
+                src="./images/about-image-programming.jpg"
+                alt="Programming"
+                class="about__item-img"
+              />
+              <div class="about__item-info">
+                <i class="fa fa-check about__icon"></i>
+                <p class="about__text">
+                  We have a team of experienced professionals.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -71,6 +102,27 @@
         <div class="container">
           <h2 class="services__title">Our Services</h2>
           <ul class="services__list">
+            <li class="services__item">
+              <i class="fa fa-code services__icon"></i>
+              <h3 class="services__name">Web Development</h3>
+              <p class="services__description">
+                We build modern and responsive websites.
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fa-solid fa-magnifying-glass services__icon"></i>
+              <h3 class="services__name">SEO Optimization</h3>
+              <p class="services__description">
+                Boost your online presence with our SEO services.
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fa-solid fa-bullhorn services__icon"></i>
+              <h3 class="services__name">Digital Marketing</h3>
+              <p class="services__description">
+                Reach your target audience effectively.
+              </p>
+            </li>
             <li class="services__item">
               <i class="fa fa-code services__icon"></i>
               <h3 class="services__name">Web Development</h3>
@@ -107,6 +159,7 @@
               <p class="contact__text">Address: 123 Main Street, City</p>
 
               <iframe
+                class="contact__map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1734974600191!5m2!1suk!2sua"
                 width="400"
                 height="400"
