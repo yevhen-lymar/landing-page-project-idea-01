@@ -26,3 +26,21 @@ document.querySelectorAll("a[href^='#']").forEach((anchor) => {
     })
   })
 })
+
+const form = document.getElementById("contact-form")
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault()
+
+  const name = form.elements["name"].value.trim()
+  const email = form.elements["email"].value.trim()
+  const message = form.elements["message"].value.trim()
+
+  if (!name || !email || !message) {
+    alert("Please fill in all fields")
+    return
+  }
+
+  alert("Message sent! Thank you for contacting us.")
+  form.reset()
+})
