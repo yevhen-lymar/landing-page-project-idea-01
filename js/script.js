@@ -44,3 +44,13 @@ form.addEventListener("submit", (event) => {
   alert("Message sent! Thank you for contacting us.")
   form.reset()
 })
+
+// MODAL JS WINDOW -- CLOSE & OPEN
+const modalBackdrop = document.getElementById("backdrop")
+const openBtn = document.getElementById("callBtn")
+const closetn = document.getElementById("modalCloseBtn")
+
+const toggleModal = () => modalBackdrop.classList.toggle("is-hidden")
+
+openBtn.addEventListener("click", toggleModal)
+closetn.addEventListener("click", toggleModal)

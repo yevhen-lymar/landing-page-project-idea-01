@@ -1,0 +1,52 @@
+/* HEADER SECTION STYLES */
+.header {
+    background-color: var(--white-color);
+    padding: 16px 32px;
+    border-bottom: 2px solid var(--border-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-size);
+  }
+  
+  .header__logo {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .header__list {
+    display: flex;
+    gap: var(--gap-size);
+  }
+  
+  .header__link {
+    font-size: 1rem;
+    color: var(--main-text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .header__link:hover {
+    color: var(--primary-color);
+  }
+  
+  .header__link i {
+    margin-right: 6px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .header__button-call {
+    padding: 8px 16px;
+  }
+  

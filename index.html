@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landind Page</title>
     <!-- Google Fonts -->
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -16,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Landind Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -45,6 +46,9 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="header__button-call btn" id="callBtn">
+          Request a call
+        </button>
       </div>
     </header>
 
@@ -173,7 +177,9 @@
               action="#"
               method="post"
               class="contact__form"
+              name="contact-form"
               id="contact-form"
+              autocomplete="off"
             >
               <input
                 type="text"
@@ -182,6 +188,9 @@
                 class="contact__input"
                 placeholder="Your Name"
                 required
+                minlength="3"
+                maxlength="15"
+                autocomplete="name"
               />
               <input
                 type="email"
@@ -190,6 +199,7 @@
                 class="contact__input"
                 placeholder="Your Email"
                 required
+                autocomplete="email"
               />
               <textarea
                 name="message"
@@ -199,7 +209,7 @@
                 rows="5"
                 required
               ></textarea>
-              <button type="submit" class="contact__button">
+              <button type="submit" class="contact__button btn">
                 Send Message
               </button>
             </form>
@@ -231,7 +241,84 @@
         </ul>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" id="backdrop">
+      <div class="modal" id="modal">
+        <button type="button" class="modal__button-close" id="modalCloseBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="modal__title">Request a call</h2>
+        <p class="modal__subtitle">
+          Fill out the form below and we will call you back.
+        </p>
+        <form
+          class="modal__form"
+          action="#"
+          name="request-call"
+          autocomplete="off"
+        >
+          <label class="modal__label visually-hidden" for="modal__user-name">
+            Enter your name
+          </label>
+          <input
+            class="modal__input"
+            type="text"
+            name="modal__user-name"
+            id="modal__user-name"
+            placeholder="Enter your name"
+            required
+            minlength="3"
+            maxlength="15"
+            autocomplete="name"
+          />
+          <label class="modal__label visually-hidden" for="modal__tel">
+            Enter your phone
+          </label>
+          <input
+            class="modal__input"
+            type="tel"
+            name="modal__tel"
+            id="modal__tel"
+            placeholder="Enter your phone"
+            required
+            minlength="9"
+            maxlength="13"
+            autocomplete="tel"
+          />
+          <label class="modal__label visually-hidden" for="modal__email">
+            Enter your email
+          </label>
+          <input
+            class="modal__input"
+            type="email"
+            name="modal__email"
+            id="modal__email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+          />
+          <div class="modal__checkbox-content">
+            <input
+              class="modal__checkbox"
+              type="checkbox"
+              name="modal__terms-conditions"
+              id="modal__terms-conditions"
+            />
+            <label class="modal__label-checkbox" for="modal__terms-conditions">
+              I agree to the processing of personal data
+            </label>
+          </div>
+          <button class="modal__button-call btn" type="submit" disabled>
+            Request a call
+          </button>
+        </form>
+        <p class="modal__terms">
+          By clicking the button, you agree to the processing of personal data
+        </p>
+      </div>
+    </div>
     <!-- java-script -->
-    <script src="./script/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

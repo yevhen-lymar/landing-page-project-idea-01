@@ -1,0 +1,39 @@
+/* ABOUT SECTION STYLES */
+.about__title {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .about__description {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    color: var(--main-text-color);
+    margin-bottom: var(--gap-size);
+  }
+  
+  .about__content {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .about__item {
+    display: flex;
+    flex-basis: calc((100% - 60px) / 2);
+    gap: var(--gap-size);
+  }
+  
+  .about__item-img {
+    height: 484px;
+    border-radius: 8px 8px 8px 156px;
+    box-shadow: -16px 16px 0 0 var(--main-bg-color),
+      -16px 16px 0 2px var(--border-color);
+  }
+  
+  .about__icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+  }

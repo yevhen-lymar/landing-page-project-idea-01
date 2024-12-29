@@ -1,0 +1,30 @@
+/* SERVICES SECTION STYLES */
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+  
+  .services__item {
+    flex-basis: calc((100% - 52px) / 3);
+    height: 300px;
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .services__item:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services__icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+  }

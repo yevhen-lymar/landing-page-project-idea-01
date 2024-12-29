@@ -1,0 +1,48 @@
+/* CONTACT SECTION STYLES */
+.contact__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* .contact__info {
+    } */
+  
+  .contact__text {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+  }
+  
+  .contact__form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact__input,
+  .contact__textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .contact__textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .contact__button {
+    padding: 12px 0;
+  }
+  
+  .contact__button:hover {
+    background-color: var(--secondary-color);
+  }
+  

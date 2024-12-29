@@ -1,0 +1,26 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./common";
+@import "./utils/utils";
+@import "./utils/buttons";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/services";
+@import "./components/contacts";
+@import "./components/footer";
+@import "./components/modal";
+
+@import "./utils/mixins";
+
+.circle {
+  @include circle(50px, 50px, red);
+}
+
+/* MEDIA QUERIES */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    scroll-snap-type: none;
+  }
+}

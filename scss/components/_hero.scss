@@ -1,0 +1,56 @@
+/* HERO SECTION STYLES */
+.hero {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  /* padding: 256px 24px; */
+  background-image: url("/images/hero-image.avif");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero__title,
+.hero__subtitle {
+  animation: fadeIn 1s ease forwards;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  animation-delay: 0.2s;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation-delay: 0.4s;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 16px 54px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.hero__button:hover {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
