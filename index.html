@@ -24,31 +24,33 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <div class="container">
-        <div class="header__logo">
-          <a href="#hero" class="header__logo-link">LandingLogo</a>
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="#hero" class="header__logo-link">LandingLogo</a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#about" class="header__link">
+                  <i class="fa fa-info-circle"></i> About
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#services" class="header__link">
+                  <i class="fa-solid fa-gear"></i> Services
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#contact" class="header__link">
+                  <i class="fa-solid fa-phone-volume"></i> Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="header__button-call btn" id="callBtn">
+            Request a call
+          </button>
         </div>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="#about" class="header__link">
-                <i class="fa fa-info-circle"></i> About
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#services" class="header__link">
-                <i class="fa-solid fa-gear"></i> Services
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#contact" class="header__link">
-                <i class="fa-solid fa-phone-volume"></i> Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="header__button-call btn" id="callBtn">
-          Request a call
-        </button>
       </div>
     </header>
 
@@ -57,44 +59,49 @@
       <!-- HERO SECTION -->
       <section class="hero" id="hero">
         <div class="container">
-          <h1 class="hero__title">Welcome to Our Landing Page</h1>
-          <p class="hero__subtitle">We create solutions for your busines</p>
-          <a href="#contact" class="hero__button">Get Started</a>
+          <div class="hero__container">
+            <h1 class="hero__title">Welcome to Our Landing Page</h1>
+            <p class="hero__subtitle">We create solutions for your busines</p>
+            <a href="#contact" class="hero__button">Get Started</a>
+          </div>
         </div>
       </section>
       <!-- ABOUT SECTION -->
       <section class="about" id="about">
         <div class="container">
-          <h2 class="about__title">About Us</h2>
-          <p class="about__description">
-            We are a team of professionals to delivering high-quality solutions.
-          </p>
-          <div class="about__content">
-            <div class="about__item">
-              <img
-                src="./images/about-image-work.jpg"
-                alt="Working"
-                class="about__item-img"
-              />
-              <div class="about__item-info">
-                <i class="fa fa-check about__icon"></i>
-                <p class="about__text">
-                  We have been in business<br />
-                  for over 10 years.
-                </p>
+          <div class="about__container">
+            <h2 class="about__title">About Us</h2>
+            <p class="about__description">
+              We are a team of professionals to delivering high-quality
+              solutions.
+            </p>
+            <div class="about__content">
+              <div class="about__item">
+                <img
+                  src="./images/about-image-work.jpg"
+                  alt="Working"
+                  class="about__item-img"
+                />
+                <div class="about__item-info">
+                  <i class="fa fa-check about__icon"></i>
+                  <p class="about__text">
+                    We have been in business<br />
+                    for over 10 years.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="about__item">
-              <img
-                src="./images/about-image-programming.jpg"
-                alt="Programming"
-                class="about__item-img"
-              />
-              <div class="about__item-info">
-                <i class="fa fa-check about__icon"></i>
-                <p class="about__text">
-                  We have a team of experienced professionals.
-                </p>
+              <div class="about__item">
+                <img
+                  src="./images/about-image-programming.jpg"
+                  alt="Programming"
+                  class="about__item-img"
+                />
+                <div class="about__item-info">
+                  <i class="fa fa-check about__icon"></i>
+                  <p class="about__text">
+                    We have a team of experienced professionals.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -104,115 +111,118 @@
       <!-- SERVICES SECTION -->
       <section class="services" id="services">
         <div class="container">
-          <h2 class="services__title">Our Services</h2>
-          <ul class="services__list">
-            <li class="services__item">
-              <i class="fa fa-code services__icon"></i>
-              <h3 class="services__name">Web Development</h3>
-              <p class="services__description">
-                We build modern and responsive websites.
-              </p>
-            </li>
-            <li class="services__item">
-              <i class="fa-solid fa-magnifying-glass services__icon"></i>
-              <h3 class="services__name">SEO Optimization</h3>
-              <p class="services__description">
-                Boost your online presence with our SEO services.
-              </p>
-            </li>
-            <li class="services__item">
-              <i class="fa-solid fa-bullhorn services__icon"></i>
-              <h3 class="services__name">Digital Marketing</h3>
-              <p class="services__description">
-                Reach your target audience effectively.
-              </p>
-            </li>
-            <li class="services__item">
-              <i class="fa fa-code services__icon"></i>
-              <h3 class="services__name">Web Development</h3>
-              <p class="services__description">
-                We build modern and responsive websites.
-              </p>
-            </li>
-            <li class="services__item">
-              <i class="fa-solid fa-magnifying-glass services__icon"></i>
-              <h3 class="services__name">SEO Optimization</h3>
-              <p class="services__description">
-                Boost your online presence with our SEO services.
-              </p>
-            </li>
-            <li class="services__item">
-              <i class="fa-solid fa-bullhorn services__icon"></i>
-              <h3 class="services__name">Digital Marketing</h3>
-              <p class="services__description">
-                Reach your target audience effectively.
-              </p>
-            </li>
-          </ul>
+          <div class="services__container">
+            <h2 class="services__title">Our Services</h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <i class="fa fa-code services__icon"></i>
+                <h3 class="services__name">Web Development</h3>
+                <p class="services__description">
+                  We build modern and responsive websites.
+                </p>
+              </li>
+              <li class="services__item">
+                <i class="fa-solid fa-magnifying-glass services__icon"></i>
+                <h3 class="services__name">SEO Optimization</h3>
+                <p class="services__description">
+                  Boost your online presence with our SEO services.
+                </p>
+              </li>
+              <li class="services__item">
+                <i class="fa-solid fa-bullhorn services__icon"></i>
+                <h3 class="services__name">Digital Marketing</h3>
+                <p class="services__description">
+                  Reach your target audience effectively.
+                </p>
+              </li>
+              <li class="services__item">
+                <i class="fa fa-code services__icon"></i>
+                <h3 class="services__name">Web Development</h3>
+                <p class="services__description">
+                  We build modern and responsive websites.
+                </p>
+              </li>
+              <li class="services__item">
+                <i class="fa-solid fa-magnifying-glass services__icon"></i>
+                <h3 class="services__name">SEO Optimization</h3>
+                <p class="services__description">
+                  Boost your online presence with our SEO services.
+                </p>
+              </li>
+              <li class="services__item">
+                <i class="fa-solid fa-bullhorn services__icon"></i>
+                <h3 class="services__name">Digital Marketing</h3>
+                <p class="services__description">
+                  Reach your target audience effectively.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- CONTACT SECTION -->
       <section class="contact" id="contact">
         <div class="container">
-          <h2 class="contact__title">Contact Us</h2>
-          <div class="contact__content">
-            <div class="contact__info">
-              <p class="contact__text">Phone: +123 456 789</p>
-              <p class="contact__text">Email: info@example.com</p>
-              <p class="contact__text">Address: 123 Main Street, City</p>
-
-              <iframe
-                class="contact__map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1734974600191!5m2!1suk!2sua"
-                width="400"
-                height="400"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+          <div class="contact__container">
+            <h2 class="contact__title">Contact Us</h2>
+            <div class="contact__content">
+              <div class="contact__info">
+                <p class="contact__text">Phone: +123 456 789</p>
+                <p class="contact__text">Email: info@example.com</p>
+                <p class="contact__text">Address: 123 Main Street, City</p>
+                <iframe
+                  class="contact__map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1734974600191!5m2!1suk!2sua"
+                  width="400"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <form
+                action="#"
+                method="post"
+                class="contact__form"
+                name="contact-form"
+                id="contact-form"
+                autocomplete="off"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  id="input-name"
+                  class="contact__input"
+                  placeholder="Your Name"
+                  required
+                  minlength="3"
+                  maxlength="15"
+                  autocomplete="name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="input-email"
+                  class="contact__input"
+                  placeholder="Your Email"
+                  required
+                  autocomplete="email"
+                />
+                <textarea
+                  name="message"
+                  id="input-message"
+                  class="contact__textarea"
+                  placeholder="Your Messsage"
+                  rows="5"
+                  required
+                ></textarea>
+                <button type="submit" class="contact__button btn">
+                  Send Message
+                </button>
+              </form>
             </div>
-            <form
-              action="#"
-              method="post"
-              class="contact__form"
-              name="contact-form"
-              id="contact-form"
-              autocomplete="off"
-            >
-              <input
-                type="text"
-                name="name"
-                id="input-name"
-                class="contact__input"
-                placeholder="Your Name"
-                required
-                minlength="3"
-                maxlength="15"
-                autocomplete="name"
-              />
-              <input
-                type="email"
-                name="email"
-                id="input-email"
-                class="contact__input"
-                placeholder="Your Email"
-                required
-                autocomplete="email"
-              />
-              <textarea
-                name="message"
-                id="input-message"
-                class="contact__textarea"
-                placeholder="Your Messsage"
-                rows="5"
-                required
-              ></textarea>
-              <button type="submit" class="contact__button btn">
-                Send Message
-              </button>
-            </form>
           </div>
         </div>
       </section>
@@ -221,24 +231,26 @@
     <!-- FOOTER -->
     <footer class="footer" id="footer">
       <div class="container">
-        <p class="footer__text">&copy; 2024 Landing Page Project</p>
-        <ul class="footer__social">
-          <li>
-            <a href="#" class="footer__social-link">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </li>
-        </ul>
+        <div class="footer__container">
+          <p class="footer__text">&copy; 2024 Landing Page Project</p>
+          <ul class="footer__social">
+            <li>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 

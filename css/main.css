@@ -212,10 +212,10 @@ h3 {
   margin: 0 auto;
 }
 
-.hero .container,
-.about .container,
-.services .container,
-.contact .container {
+.hero__container,
+.about__container,
+.services__container,
+.contact__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +229,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  height: calc(100vh - var(--header-height-size) - var(--footer-height-size));
 }
 
 .about__title,
@@ -338,7 +338,7 @@ button:disabled {
   z-index: 1000;
 }
 
-.header .container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
